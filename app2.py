@@ -34,7 +34,7 @@ with col1:
             try:
                 with st.spinner("Procesando audio..."):
                     audio_data = archivo_audio.read()
-                   if len(audio_data) > 5 * 1024 * 1024:  # 5MB
+                if len(audio_data) > 5 * 1024 * 1024:  # 5MB
                     st.warning("⚠ Archivo demasiado grande para móviles, intenta uno más pequeño")
                 else:
                     audio_base64 = base64.b64encode(audio_data).decode("utf-8")
