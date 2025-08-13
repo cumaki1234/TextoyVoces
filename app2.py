@@ -25,7 +25,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown('<div class="container">', unsafe_allow_html=True)
     st.subheader("🔊 Audio a Texto")
-    archivo_audio = st.file_uploader("Selecciona un archivo de audio", type=["wav", "mp3", "ogg","m4a","acc"], key="audio1")
+    archivo_audio = st.file_uploader("Selecciona un archivo de audio", type=["wav", "mp3", "ogg","m4a","aac"], key="audio1")
     
     if archivo_audio:
         st.audio(archivo_audio, format="audio/wav")
